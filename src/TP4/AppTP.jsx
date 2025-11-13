@@ -1,8 +1,7 @@
-import React from "react";
-import { UserProvider } from "./TP_Profile_Notification/UserContext";
-import UserProfile from "./TP_Profile_Notification/UserProfile";
-import Notifications from "./TP_Profile_Notification/Notifications";
-import NotificationCounter from "./TP_Profile_Notification/NotificationCounter";
+import  UserProvider  from "./UserProvider";
+import UserProfile from "./UserProfile";
+import Notifications from "./Notifications";
+import NotificationCounter from "./NotificationCounter";
 
 function AppTP() {
   return (
@@ -12,6 +11,7 @@ function AppTP() {
         <UserProfile />
         <Notifications />
         <NotificationCounter />
+        
       </div>
     </UserProvider>
   );

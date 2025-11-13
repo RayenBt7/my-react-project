@@ -1,0 +1,6 @@
+{
+  "watch": ["src/TP5/serveur.js", "routes/", "modules/"],
+  "ext": "js,json,html",
+  "ignore": ["data/", "public/"],
+  "exec": "node src/TP5/serveur.js"
+}

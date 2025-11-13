@@ -1,0 +1,6 @@
+À la fin de ce TP, vous devez être capable de :
+Exécuter un script Node.js depuis le terminal
+Lire et afficher le contenu d’un fichier texte
+Créer un serveur HTTP minimaliste
+Comprendre la structure d’un module Node.js
+Gérer des erreurs et définir des en-têtes HTTP

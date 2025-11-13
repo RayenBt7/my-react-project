@@ -1,0 +1,1 @@
+console.log("TP5 hello world from the king Rbt");

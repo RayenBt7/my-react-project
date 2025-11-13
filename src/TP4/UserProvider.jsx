@@ -1,9 +1,7 @@
-import React, { createContext, useState } from "react";
+import React, { useState } from "react";
+import { UserContext } from "./contexts/UserContext";
 
-// Création du contexte utilisateur
-export const UserContext = createContext();
-
-export function UserProvider({ children }) {
+function UserProvider({ children }) {
   const [user, setUser] = useState({
     name: "Rayen",
     connected: false,
@@ -23,3 +21,5 @@ export function UserProvider({ children }) {
     </UserContext.Provider>
   );
 }
+
+export default UserProvider;

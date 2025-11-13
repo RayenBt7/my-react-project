@@ -14,6 +14,7 @@ function ListeCourses() {
   return (
     <div style={{ marginTop: "30px" }}>
       <h2>Liste de courses 🛒</h2>
+      
       <input
         type="text"
         placeholder="Ajouter un article"
