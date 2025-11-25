@@ -8,7 +8,7 @@ function Compteur() {
     <div style={{ textAlign: "center", marginTop: "30px" }}>
       <h2>Compteur : {count}</h2>
 
-      <button onClick={() => setCount(count + 1)}>➕ Incrémenter</button>
+      <button  onClick={() => setCount(count + 1)}>➕ Incrémenter</button>
       <button
         onClick={() => setCount(count - 1)}
         style={{ marginLeft: "10px" }}

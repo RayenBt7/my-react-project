@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= user.name %> - Profil</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1><%= "Rayen" %></h1>
+
+  <p>Âge : <%= 21 %></p>
+  <p>Profession : <%= "Software Engineer" %></p>
+
+  <h3>Loisirs :</h3>
+  <ul>
+    <% user.hobbies.forEach(hobby => { %>
+      <li><%= hobby %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>

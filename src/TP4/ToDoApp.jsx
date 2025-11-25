@@ -24,6 +24,7 @@ function TodoApp() {
 
   return (
     <div className="todo-app">
+      <h1>🔥 Exercices React avancés - TP4</h1>
       <h2>Todo List</h2>
       <input type="text" value={task} onChange={(e) => setTask(e.target.value)} placeholder="Ajouter une tâche" />
       <button onClick={addTask}>Ajouter</button>

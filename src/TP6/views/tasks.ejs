@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styles.css">
+	<title>tasks</title>
+</head>
+<body>
+	<h1>Tâches (Total : <%= tasks.length %>)</h1>
+	<form id="taskForm">
+  <input type="text" id="title" placeholder="Nouvelle tâche" required>
+  <button type="submit">Ajouter</button>
+</form>
+
+<script>
+  const form = document.getElementById('taskForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const title = document.getElementById('title').value;
+    if (!title) return alert('Le titre est requis');
+
+    const res = await fetch('/api/tasks', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ title })
+    });
+
+    if (res.ok) location.reload();
+    else alert('Erreur lors de l\'ajout de la tâche');
+  });
+</script>
+
+<ul>
+  <% tasks.forEach(task => { %>
+    <li>
+      <%= task.title %> - <% if (task.done) { %> ✔️ Terminé <% } else { %> ❌ En cours <% } %>
+    </li>
+  <% }) %>
+</ul>
+<a href="/">Retour à l'accueil</a>
+
+</body>
+</html>
+
+

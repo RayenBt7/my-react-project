@@ -1,8 +1,13 @@
 // src/Bienvenue.jsx
 
 function Bienvenue({ nom }) {
+  
   return (
-    <h2>Bienvenue, {nom} !</h2>
+    <div>
+      <h1>📘 Exercices React de base - TP3</h1>
+      <h2>Bienvenue, {nom} !</h2>    
+    </div>
+    
   );
 }
 
